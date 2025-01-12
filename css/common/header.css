@@ -1,0 +1,81 @@
+.header{
+    background-color: #a6dcef;
+    color: #3a506b;
+    height: 63px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: default;
+
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+/* UL list */
+ul{
+    /* background-color: rebeccapurple; */
+    display: flex;
+    width: max-content;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.header a{
+    /* background-color: rebeccapurple; */
+    color: #3a506b;
+    padding: 20px 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+li a:hover{
+    background: #fce5cd;
+    border-radius: 5px;
+}
+
+/* Lase BOOK AP Button */
+.header div:nth-child(3){
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGE BG BLEND */
+.header div:nth-child(3) img{
+    mix-blend-mode: color-burn;
+}
+
+/* CTA */
+.cta{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta a{
+    background: #3a506b;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.cta a:hover {
+    background: rgb(86, 160, 129);
+}
+
+.cta svg {
+    height: 30px; 
+    width: auto;
+}
