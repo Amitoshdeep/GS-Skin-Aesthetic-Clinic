@@ -142,34 +142,6 @@
     </div>
 
     <script src="/js/smoothScroll.js"></script>
-    
-    <script>
-        const form = document.getElementById("contactForm");
-        form.addEventListener("submit", async (e) => {
-            e.preventDefault();
-            const formData = new FormData(form);
-            const name = formData.get("name");
-            const email = formData.get("email");
-            const message = formData.get("message");
-
-            // Replace with your WhatsApp API endpoint
-            const url = `https://api.callmebot.com/whatsapp.php?phone=7529058713&text=${encodeURIComponent(
-                `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
-            )}&apikey=YOUR_API_KEY`;
-
-            try {
-                const response = await fetch(url);
-                if (response.ok) {
-                    alert("WhatsApp message sent successfully!");
-                } else {
-                    alert("Failed to send WhatsApp message.");
-                }
-            } catch (err) {
-                console.error(err);
-                alert("Error sending WhatsApp message.");
-            }
-        });
-    </script>
 
 </body>
 
